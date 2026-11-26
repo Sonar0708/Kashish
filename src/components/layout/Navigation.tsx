@@ -14,7 +14,7 @@ import Magnetic from "@/components/ui/Magnetic";
 export function Logo({ className }: { className?: string }) {
   return (
     <Link href="/" className={cn("group flex items-center gap-2.5", className)} aria-label={`${site.name}, home`}>
-      <span className="relative grid h-10 w-10 place-items-center rounded-2xl bg-plum font-display text-lg italic text-cream transition-transform duration-500 group-hover:rotate-[-8deg]">
+      <span className="relative flex h-10 w-10 shrink-0 items-center justify-center whitespace-nowrap rounded-2xl bg-plum font-display text-lg italic leading-none text-cream transition-transform duration-500 group-hover:rotate-[-8deg]">
         K<span className="text-coral">t</span>
       </span>
       <span className="leading-tight">
@@ -77,7 +77,7 @@ export default function Navigation() {
       <div
         className={cn(
           "mx-auto flex max-w-7xl items-center justify-between rounded-3xl px-4 py-2.5 transition-all duration-500 sm:px-5",
-          scrolled || open ? "glass soft-shadow" : "border border-transparent",
+          open ? "border border-white bg-cream soft-shadow" : scrolled ? "glass soft-shadow" : "border border-transparent",
         )}
       >
         <Logo />
@@ -178,6 +178,20 @@ export default function Navigation() {
 
       <AnimatePresence>
         {open && (
+          <motion.div
+            key="menu-backdrop"
+            aria-hidden
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setOpen(false)}
+            className="fixed inset-0 -z-10 bg-plum/30 backdrop-blur-sm lg:hidden"
+          />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {open && (
           <motion.nav
             id="mobile-menu"
             aria-label="Mobile"
@@ -185,7 +199,7 @@ export default function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="glass lift-shadow mx-auto mt-2 max-h-[calc(100dvh-6rem)] max-w-7xl overflow-y-auto rounded-3xl p-5 lg:hidden"
+            className="lift-shadow mx-auto mt-2 max-h-[calc(100dvh-6rem)] border border-white bg-cream max-w-7xl overflow-y-auto rounded-3xl p-5 lg:hidden"
             data-lenis-prevent
           >
             <ul className="space-y-1">
