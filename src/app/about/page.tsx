@@ -114,6 +114,9 @@ export default function AboutPage() {
               <p>
                 Today I&apos;m an HR Executive at Popaya® Technologies in Mumbai, handling end-to-end recruitment, HR operations, employee engagement, employee relations, onboarding and offboarding.
               </p>
+              <p>
+                Beyond my HR roles, I&apos;ve conducted a session for BBA students at VESASC, Chembur. I enjoy helping students understand what recruiters look for and how to make the move from campus to corporate life.
+              </p>
             </div>
             <div className="mt-8 rounded-3xl border border-white bg-white/60 p-6 soft-shadow">
               <p className="font-display text-xl text-plum">Let&apos;s connect on LinkedIn</p>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s — Kashish Talreja, HR Professional",
   },
   description:
-    "Kashish Talreja is a Mumbai-based HR professional offering freelance recruitment, HR operations, employee engagement, HR documentation, HR reporting and HRMS support, and open to suitable HR opportunities.",
+    "Kashish Talreja is a Mumbai-based HR professional offering freelance recruitment, HR operations, employee engagement, HR documentation, HR reporting, HRMS support, campus-to-corporate seminars and corporate training, and open to suitable HR opportunities.",
   keywords: [
     "Kashish Talreja",
     "HR professional Mumbai",
@@ -29,6 +29,8 @@ export const metadata: Metadata = {
     "employee engagement",
     "HRMS implementation support",
     "HR documentation",
+    "campus to corporate seminar",
+    "corporate training Mumbai",
   ],
   authors: [{ name: site.name, url: site.linkedin }],
   creator: site.name,

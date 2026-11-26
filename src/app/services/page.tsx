@@ -26,6 +26,7 @@ const engagement = [
   { title: "One-off task", text: "A job description, onboarding checklist, tracker or document set." },
   { title: "Recruitment assignment", text: "Support for one or more specific openings, from JD to joining." },
   { title: "Ongoing support", text: "Regular part-time HR help for a set number of hours or tasks each month." },
+  { title: "Seminar or training session", text: "A campus-to-corporate seminar for students or a training session for your team." },
 ];
 
 export default function ServicesPage() {

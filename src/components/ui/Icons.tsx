@@ -1,4 +1,4 @@
-import { ChartColumn, FileText, HeartHandshake, Settings2, UsersRound, Workflow } from "lucide-react";
+import { ChartColumn, FileText, GraduationCap, HeartHandshake, Settings2, UsersRound, Workflow } from "lucide-react";
 import type { Service } from "@/data/services";
 
 export function LinkedInIcon({ className = "h-4 w-4" }: { className?: string }) {
@@ -24,6 +24,7 @@ const map = {
   file: FileText,
   chart: ChartColumn,
   workflow: Workflow,
+  training: GraduationCap,
 } as const;
 
 export function ServiceIcon({ icon, className = "h-6 w-6" }: { icon: Service["icon"]; className?: string }) {

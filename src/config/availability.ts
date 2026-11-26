@@ -82,6 +82,13 @@ export const availability = {
       formType: "Other Collaboration",
     },
     {
+      id: "training",
+      title: "Seminars & corporate training",
+      description: "Campus-to-corporate seminars for colleges and professional-skills training sessions for companies.",
+      status: "selective" as AvailabilityStatus,
+      formType: "Seminar / Corporate Training",
+    },
+    {
       id: "full-time",
       title: "Suitable full-time opportunities",
       description: "Full-time HR roles in talent acquisition, HR operations or people operations where I can grow and contribute.",

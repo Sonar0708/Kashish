@@ -110,6 +110,21 @@ export const experience: Role[] = [
   },
 ];
 
+/**
+ * Seminars and training sessions Kashish has delivered.
+ * TODO (confirm with Kashish): session topic and date, so they can be shown here.
+ */
+export const sessions = [
+  {
+    id: "vesasc-bba",
+    institution: "VESASC, Chembur",
+    audience: "BBA students",
+    location: "Chembur, Mumbai",
+    type: "Student seminar",
+    summary: "Conducted a session for BBA students at VESASC, Chembur.",
+  },
+];
+
 /** Systems Kashish has hands-on experience with (from the roles above). */
 export const systems = [
   { name: "Razorpay HRMS", context: "Implemented for automated attendance and leave calculations at Kamala Group." },

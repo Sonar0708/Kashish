@@ -15,6 +15,7 @@ export const opportunityTypes = [
   "Full-time Role",
   "Remote Opportunity",
   "Contract Role",
+  "Seminar / Corporate Training",
   "Other Collaboration",
 ];
 

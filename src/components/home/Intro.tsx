@@ -12,9 +12,10 @@ const problems = [
   "Attendance & leave confusion",
   "Unclear HR documents",
   "No visibility on hiring or attrition",
+  "Freshers not ready for corporate life",
 ];
 
-const roles = ["Freelance HR assignments", "Recruitment projects", "Part-time & contract roles", "Remote & hybrid roles", "Suitable full-time roles"];
+const roles = ["Freelance HR assignments", "Recruitment projects", "Seminars & corporate training", "Part-time & contract roles", "Remote & hybrid roles", "Suitable full-time roles"];
 
 export default function Intro() {
   return (

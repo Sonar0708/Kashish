@@ -114,7 +114,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <section className="py-24" aria-labelledby="evidence-title">
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.2fr]">
           <div>
-            <SectionHeading id="evidence-title" eyebrow="Backed by experience" title="Where I've done this before" intro="Taken directly from my roles. See the full timeline for details." />
+            <SectionHeading
+              id="evidence-title"
+              eyebrow="Backed by experience"
+              title={s.experienceTitle ?? "Where I've done this before"}
+              intro={s.experienceIntro ?? "Taken directly from my roles. See the full timeline for details."}
+            />
             <Reveal delay={0.1} className="mt-8">
               <p className="text-sm font-semibold text-plum">Good fit for</p>
               <ul className="mt-3 flex flex-wrap gap-2">

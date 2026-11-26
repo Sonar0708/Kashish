@@ -2,13 +2,16 @@ export type Service = {
   slug: string;
   title: string;
   navLabel: string;
-  icon: "users" | "settings" | "heart" | "file" | "chart" | "workflow";
+  icon: "users" | "settings" | "heart" | "file" | "chart" | "workflow" | "training";
   tint: "coral" | "plum" | "lavender" | "blush";
   tagline: string;
   summary: string;
   problems: string[];
   includes: string[];
   approach: { title: string; text: string }[];
+  /** Optional heading/intro override for the experience section. */
+  experienceTitle?: string;
+  experienceIntro?: string;
   experience: { org: string; point: string }[];
   samples: string[];
   resources: string[];
@@ -247,6 +250,51 @@ export const services: Service[] = [
     samples: ["hrms-implementation-workflow", "attendance-leave-tracker"],
     resources: ["attendance-tracker", "onboarding-checklist"],
     goodFor: ["Companies adopting their first HRMS", "Teams with attendance systems that aren't trusted", "Businesses cleaning up employee data"],
+  },
+  {
+    slug: "campus-to-corporate-training",
+    title: "Campus-to-Corporate Seminars & Corporate Training",
+    navLabel: "Training & Seminars",
+    icon: "training",
+    tint: "blush",
+    tagline: "Helping students become job-ready and teams work more professionally.",
+    summary:
+      "Interactive seminars for colleges and training sessions for companies, covering campus-to-corporate readiness, interviews, resumes, professional communication and workplace etiquette, taught from an HR and recruiter's point of view.",
+    problems: [
+      "Final-year students have degrees but feel unprepared for interviews.",
+      "Freshers don't know how recruiters screen resumes and shortlist candidates.",
+      "New joiners take time to adjust to corporate communication and etiquette.",
+      "Teams need a communication or professionalism refresher but have no in-house trainer.",
+    ],
+    includes: [
+      "Campus-to-corporate transition seminars",
+      "Resume and LinkedIn profile workshops",
+      "Interview preparation and mock interviews",
+      "Professional communication and email etiquette",
+      "Workplace etiquette and corporate readiness",
+      "Career guidance sessions for students",
+      "New-joiner induction and orientation sessions",
+      "Corporate training on communication, teamwork and professional conduct",
+    ],
+    approach: [
+      { title: "Understand the audience", text: "Agree the group, their level and what the college or company wants them to take away." },
+      { title: "Customise content", text: "Tailor examples, activities and duration to the batch or team." },
+      { title: "Deliver interactively", text: "Run an engaging session with real HR examples, discussions and activities." },
+      { title: "Practise & feedback", text: "Mock interviews, resume reviews or role-plays, with practical feedback." },
+      { title: "Follow up", text: "Share session notes and checklists participants can keep using." },
+    ],
+    experienceTitle: "The HR experience behind it",
+    experienceIntro: "I've conducted a session for BBA students at VESASC, Chembur. My sessions draw on what I see every day in recruitment, onboarding and employee communication.",
+    experience: [
+      { org: "VESASC, Chembur", point: "Conducted a session for BBA students at VESASC, Chembur." },
+      { org: "Recruitment", point: "Managed end-to-end recruitment across departments, screening and shortlisting candidates, so I know what recruiters look for in resumes and interviews." },
+      { org: "Interview coordination", point: "Coordinated high-volume interview schedules and candidate communication." },
+      { org: "Onboarding", point: "Standardised onboarding and employee documentation, and handle new-joiner onboarding today." },
+      { org: "Professional communication", point: "Prepared professional employee communications and formal correspondence, including communications addressed to ministers." },
+    ],
+    samples: [],
+    resources: ["job-description-template", "interview-evaluation"],
+    goodFor: ["Colleges and universities", "Training and placement cells", "Companies onboarding freshers", "Teams wanting a professional-skills refresher"],
   },
 ];
 
