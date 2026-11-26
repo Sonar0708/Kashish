@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* ───────────── DESIGN TOKENS ───────────── */
+@theme inline {
+  --color-cream: #fbf6f0;
+  --color-cream-deep: #f3e9de;
+  --color-lavender: #cdbff3;
+  --color-lavender-soft: #ede7fb;
+  --color-blush: #f6cdd7;
+  --color-blush-soft: #fdeef1;
+  --color-plum: #3a1c47;
+  --color-plum-soft: #6b3f7e;
+  --color-coral: #ff6f5e;
+  --color-coral-deep: #e2503f;
+  --color-ink: #2a1633;
+  --color-mute: #6f5e78;
+  --color-line: rgb(58 28 71 / 0.12);
+
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-hand: var(--font-caveat), "Comic Sans MS", cursive;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-text-size-adjust: 100%;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-coral);
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-coral);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ───────────── REUSABLE SURFACES ───────────── */
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-inline: 1.25rem;
+  @media (width >= 40rem) {
+    padding-inline: 2rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 2.5rem;
+  }
+}
+@utility glass {
+  background: rgb(255 255 255 / 0.55);
+  border: 1px solid rgb(255 255 255 / 0.75);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+}
+@utility soft-shadow {
+  box-shadow:
+    0 1px 2px rgb(58 28 71 / 0.04),
+    0 12px 32px -12px rgb(58 28 71 / 0.18);
+}
+@utility lift-shadow {
+  box-shadow:
+    0 2px 4px rgb(58 28 71 / 0.05),
+    0 28px 60px -24px rgb(58 28 71 / 0.35);
+}
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-coral-deep);
+}
+@utility display {
+  font-family: var(--font-display);
+  font-variation-settings:
+    "opsz" 144,
+    "SOFT" 50;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+
+/* Soft page wash */
+.page-wash {
+  background:
+    radial-gradient(60rem 40rem at 85% -10%, rgb(205 191 243 / 0.55), transparent 60%),
+    radial-gradient(50rem 30rem at -10% 20%, rgb(246 205 215 / 0.55), transparent 60%),
+    var(--color-cream);
+}
+
+/* Dotted grid texture */
+.dot-grid {
+  background-image: radial-gradient(rgb(58 28 71 / 0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* ───────────── KEYFRAMES ───────────── */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--r, 0deg));
+  }
+  50% {
+    transform: translateY(-14px) rotate(var(--r, 0deg));
+  }
+}
+.float-y {
+  animation: float-y 7s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.08);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+}
+.blob {
+  animation: blob 18s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin-slow {
+  animation: spin-slow 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+}

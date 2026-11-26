@@ -1,0 +1,36 @@
+INTERVIEW EVALUATION FORM
+Template by Kashish Talreja · Free to use and adapt
+
+Candidate ID: ____________________    Role: ____________________
+Interview round: _________________    Date: ____________________
+Interviewer: _____________________
+
+RATING SCALE
+1 = Poor   2 = Fair   3 = Good   4 = Very good   5 = Excellent
+
+SECTION A: ROLE FIT                                  Rating (1-5)
+- Relevant experience                                  [   ]
+- Job knowledge                                        [   ]
+- Problem solving                                      [   ]
+Evidence (what did the candidate say or show?):
+______________________________________________________________
+
+SECTION B: BEHAVIOUR                                 Rating (1-5)
+- Communication                                        [   ]
+- Ownership and accountability                         [   ]
+- Team fit                                             [   ]
+Evidence:
+______________________________________________________________
+
+SECTION C: RECOMMENDATION
+Overall rating (1-5): [   ]
+Proceed to next round?   [ ] Yes   [ ] No   [ ] Hold
+Strengths:
+______________________________________________________________
+Concerns:
+______________________________________________________________
+
+TIPS FOR INTERVIEWERS
+- Fill this in within an hour of the interview, while details are fresh.
+- Rate on evidence, not impressions.
+- Every interviewer should complete their own form before discussing with the panel.

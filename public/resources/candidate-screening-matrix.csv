@@ -1,0 +1,8 @@
+Role:,,,,,,,
+Criteria weights (must total 100%):,30%,25%,20%,15%,10%,,
+Candidate ID,Experience (1-5),Communication (1-5),Industry fit (1-5),Location (1-5),Notice period (1-5),Weighted score,Decision (Shortlist / Hold / Not now),Notes
+C-001,,,,,,=B4*0.3+C4*0.25+D4*0.2+E4*0.15+F4*0.1,,
+C-002,,,,,,=B5*0.3+C5*0.25+D5*0.2+E5*0.15+F5*0.1,,
+C-003,,,,,,=B6*0.3+C6*0.25+D6*0.2+E6*0.15+F6*0.1,,
+C-004,,,,,,=B7*0.3+C7*0.25+D7*0.2+E7*0.15+F7*0.1,,
+C-005,,,,,,=B8*0.3+C8*0.25+D8*0.2+E8*0.15+F8*0.1,,

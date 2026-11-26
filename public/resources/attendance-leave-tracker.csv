@@ -1,0 +1,8 @@
+Month:,,,,,,,,,
+Working days:,,,,,,,,,
+Employee ID,Department,Present days,Approved leave (days),Leave type,Unplanned absence (days),Late marks,Total accounted,Status (Verified / Check),Notes
+E-001,,,,,,,=C4+D4+F4,,
+E-002,,,,,,,=C5+D5+F5,,
+E-003,,,,,,,=C6+D6+F6,,
+E-004,,,,,,,=C7+D7+F7,,
+E-005,,,,,,,=C8+D8+F8,,

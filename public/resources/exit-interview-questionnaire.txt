@@ -1,0 +1,23 @@
+EXIT INTERVIEW QUESTIONNAIRE
+Template by Kashish Talreja · Free to use and adapt
+
+Employee ID: ______________   Department: ______________
+Last working day: _________   Interviewer: _____________
+
+Tell the employee that answers are used to improve the workplace and are handled confidentially.
+
+1. What is the main reason you decided to leave?
+2. Was there a moment when you started considering other options? What happened?
+3. How would you describe your relationship with your manager?
+4. Did your role match what was described when you joined?
+5. Did you have the tools, information and support to do your job well?
+6. How did you feel about recognition and growth opportunities here?
+7. What did you enjoy most about working here?
+8. What one change would have made you stay?
+9. Would you recommend this company to a friend? Why or why not?
+10. Anything else you would like to share?
+
+CODING GUIDE FOR SPOTTING TRENDS
+After each interview, tag the main reason with ONE code and log it in your attrition tracker:
+GROWTH · COMPENSATION · MANAGER · ROLE-MISMATCH · WORK-LIFE · RELOCATION · STUDIES · OTHER
+Review the codes every quarter to see which reasons repeat.
